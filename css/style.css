@@ -241,7 +241,7 @@ nav#menubar ul li.current a {
 	padding: 5px;			/*余白。ここに上の行で設定した背景色が出ます。*/
 	border: 1px solid #CCC;	/*枠線の幅、線種、色*/
 	margin-right: 10px;
-	width: 30%;	/*写真の幅*/
+	/*width: 30%;*/	/*写真の幅*/
 }
 /*ボックス内のh4タグ設定*/
 #main section.list h4 {
