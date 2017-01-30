@@ -232,15 +232,28 @@ nav#menubar ul li.current a {
 /*ボックス内の段落タグ設定*/
 #main section.list p {
 	padding: 0px;
-	margin-left: 34%;	/*左の画像とバランスをとって設定する*/
+	/*margin-left: 34%;*/	/*左の画像とバランスをとって設定する*/
 }
 /*ボックス内の写真設定*/
-#main section.list figure img {
+#main section.list figure {
 	float: left;			/*画像を左へ回り込み*/
+	background: #FFF;		/*画像の背景色。ここでは枠線と画像の間の色になります。*/
+	padding-left: 5px;			/*余白。ここに上の行で設定した背景色が出ます。*/
+	padding-right: 5px;			/*余白。ここに上の行で設定した背景色が出ます。*/
+	padding-top: 5px;			/*余白。ここに上の行で設定した背景色が出ます。*/
+	border: 1px solid #CCC;	/*枠線の幅、線種、色*/
+	margin-right: 10px;
+	/*width: 30%;*/	/*写真の幅*/
+}
+
+/*ボックス内の写真設定*/
+#main section.list img {
+	float: none;			/*画像を左へ回り込み*/
 	background: #FFF;		/*画像の背景色。ここでは枠線と画像の間の色になります。*/
 	padding: 5px;			/*余白。ここに上の行で設定した背景色が出ます。*/
 	border: 1px solid #CCC;	/*枠線の幅、線種、色*/
-	margin-right: 10px;
+	display:block;
+	margin-bottom:5px;
 	/*width: 30%;*/	/*写真の幅*/
 }
 /*ボックス内のh4タグ設定*/
@@ -770,7 +783,16 @@ nav#menubar ul li a {
 	margin-left: 0;
 }
 /*ボックス内の写真設定*/
-#main section.list figure img {
+#main section.list img {
+	float: none;
+	margin-right: 0;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#main section.list figure {
 	float: none;
 	margin-right: 0;
 	width: 100%;
@@ -779,6 +801,8 @@ nav#menubar ul li a {
 	-webkit-box-sizing: border-box;
 	margin-bottom: 10px;
 }
+
+
 
 /*トップページ内「更新情報・お知らせ」ブロック
 ---------------------------------------------------------------------------*/
