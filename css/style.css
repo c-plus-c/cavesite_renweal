@@ -861,3 +861,11 @@ body.s-n #sub {
 {
 	margin-left:10px;
 }
+
+.map_frame
+{
+	width:90%;
+	max-width:600px;
+	margin-top:10px;
+	border:2px solid #cfcfcf;
+}
