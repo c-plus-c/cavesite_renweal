@@ -63,7 +63,7 @@ header {
 /*ロゴ画像*/
 header #logo {
 	float: left;	/*ロゴを左寄せ*/
-	margin-left:60px;
+	margin-left:45px;
 }
 
 header #labo_title {
