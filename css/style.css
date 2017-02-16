@@ -56,13 +56,29 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	padding: 40px;	/*ヘッダー内の余白*/
+	padding: 10px;	/*ヘッダー内の余白*/
 	overflow: hidden;
+	
 }
 /*ロゴ画像*/
 header #logo {
 	float: left;	/*ロゴを左寄せ*/
+	margin-left:60px;
 }
+
+header #labo_title {
+	float: left;
+	margin-left:25px;
+}
+
+header #labo_name {
+	font-size:26pt;
+}
+
+header #labo_institution {
+	font-size:16pt;
+}
+
 /*電話番号ボックスの設定*/
 header address {
 	float: right;		/*電話番号ボックスを右寄せ*/
@@ -681,7 +697,21 @@ header {
 /*ロゴ画像*/
 header #logo {
 	float: none;
+	margin-left:0px;
 }
+
+header #labo_title {
+	float:none;
+}
+
+header #labo_name {
+	font-size:16pt;
+}
+
+header #labo_institution {
+	font-size:10pt;
+}
+
 /*電話番号ボックスの設定*/
 header address {
 	float: none;
@@ -743,7 +773,21 @@ header {
 /*ロゴ画像*/
 header #logo {
 	float: none;
+	margin-left:0px;
 }
+
+header #labo_title {
+	float: none;
+}
+
+header #labo_name {
+	font-size:12pt;
+}
+
+header #labo_institution {
+	font-size:8pt;
+}
+
 /*電話番号ボックスの設定*/
 header address {
 	float: none;
