@@ -12,6 +12,9 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script type="text/javascript" src="js/openclose.js"></script>
+<link href="lity/lity.css" rel="stylesheet">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="lity/lity.js"></script>
 </head>
 
 <body class="s-n">
@@ -19,7 +22,11 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/logo.png" width="370" height="60" alt="Sample Company"></a></h1>
+<a href="index.html" id="logo" ><img src="images/logo.png" alt="CAVELab"></a>
+<div id="labo_title">
+<div id="labo_name">ビジュアルサイエンス研究室</div>
+<div id="labo_institution">筑波大学 システム情報工学研究科 コンピュータサイエンス専攻</div>
+</div>
 </header>
 
 <nav id="menubar">
@@ -40,10 +47,10 @@
 <nav class="box1">
 <h2>研究テーマ</h2>
 <ul class="submenu mb10">
-<li><a href="#motion_analysis">モーションデータ解析</a></li>
+<li><a href="#motion_analysis">舞踊動作の信号解析</a></li>
 <li><a href="#visualize_vortex">渦の可視化</a></li>
 <li><a href="#synesthesia">共感覚</a></li>
-<li><a href="#illusionally_ownership">Illusionally Ownership</a></li>
+<li><a href="#illusory_ownership">Illusionally Ownership</a></li>
 <li><a href="#light_simulation">光シミュレーション</a></li>
 </ul>
 </nav>
@@ -59,50 +66,61 @@
 <p>2017年現在、CAVELabで行っている主な研究を紹介します。</p>
 
 	<section class="list" id="motion_analysis">
-    <a href="#">
-    <h4>モーションデータ解析</h4>
+    <h4>舞踊動作の信号解析</h4>
 	<figure>
-    <img src="images/sample1.jpg" width="200" height="133" alt="">
+	<a href="#chap1" data-lity="data-lity">
+    <img src="images/sample1.jpg" width="200" height="133">
+	</a>
 	</figure>
-    <p>
-	ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-	</p>
-    </a>
+	<div id='chap1' class='lity-hide'>  
+		<img src='http://phi-jp.github.io/phiary-workspace/assets/images/cafe.jpg' width='300px' />
+		<div class="graph_title">モーションキャプチャ1</div>
+	</div> 
+	<div id='chap2' class='lity-hide'>
+		<img src='http://phi-jp.github.io/phiary-workspace/assets/images/cafe.jpg' width='300px' />  
+		<div>モーションキャプチャ1</div>
+	</div>  
+	<p>　近年、舞踊動作に関する解析と評価および自動生成の研究が数多く行われ、舞踊動作の保存と特徴分析などに応用されています。そのため，正しく舞踊動作の特徴を抽出することが望まれています。舞踊動作の自動生成および解析に関する研究は今まで数多く行われてきましたが、スムーズかつ綺麗な動作を生成するには、まず既存の舞踊動作の特徴を数学的に解析する必要があります。本研究ではヒルベルト－ファン変換（Hilbert Huang Transform : HHT）を用いた舞踊動作スペクトルの新たな解析手法を提案し、それを舞踊動作の信号データに適用することでその動作の特徴抽出を試みます。</p>
+	<p>　HHTは非線形かつ非定常の信号の解析に際して優れた性能を示します。また、信号の瞬時周波数を正確に求められるため、血圧変化の測定、不整脈の判定、潜水艦の探知や地震対策工事の検査など、様々の分野での応用と研究に使われています。</p>
+	<p>　現在、カメラやモーションキャプチャによって得られた舞踊動作の信号データが、研究対象として盛んに解析されています。特にモーションキャプチャでは、人の関節の位置にマーカーを置くことで、関節の位置に加えてそれが回転した角度も取得できます。</p>
+	<p>　本研究ではこれらを踏まえて、人間のモーションデータにおける各関節の位置と回転した角度に着目し，HHTとビートトラッキングを組み合わせることによって音楽との関係を考慮した舞踊動作データのスペクトル分析を行います。現在はPerfume、日本伝統舞踊の能楽、世界無形文化財の文楽の舞踊動作解析を行っています。</p>
     </section>
 	
     <section class="list" id="visualize_vortex">
-    <a href="#">
     <h4>渦の可視化</h4>
 	<figure>
     <img src="images/sample1.jpg" width="200" height="133" alt="" class="first_img_in_figure">
     <img src="images/sample1.jpg" width="200" height="133" alt="">
 	</figure>
     <p>製品Bの説明をここに入れます。</p>
-    </a>
     </section>
 	
 	<section class="list" id="synesthesia">
-    <a href="service2.html">
     <h4>共感覚</h4>
     <figure><img src="images/sample1.jpg" width="200" height="133" alt=""></figure>
     <p>製品Bの説明をここに入れます。</p>
-    </a>
     </section>
 	
-	<section class="list" id="illusionally_ownership">
-    <a href="#">
-    <h4>Illusionally Ownership</h4>
-    <figure><img src="images/sample1.jpg" width="200" height="133" alt=""></figure>
-    <p>製品Bの説明をここに入れます。</p>
-    </a>
+	<section class="list" id="illusory_ownership">
+    <h4>仮想現実とIllusory Ownership</h4>
+    <figure>
+	<a href="#io1" data-lity="data-lity">
+	<img src="images/io1_thumb.png" alt="">
+	</a>
+	<div id='io1' class='lity-hide'>
+		<img src='images/io1.png'>  
+		<div class="graph_title">OpenBCIを用いた脳波による没入感の検証</div>
+	</div>  
+	</figure>
+	<p>　考えてみて下さい。自分の目に映るもの、自分が感知しているもの、それは真実なのでしょうか?</p>
+	<p>　近年、ラバーハンドイリュージョン（Rubber Hand Illusion : RHI）や全身錯覚（Full Body Illusion : FBI）などの人間の身体に関する自己認識に関する研究が盛んに行われてきました。RHIとは、目の前に置かれたゴムによる擬似な手が特定な条件で自分の手と認識させられる現象のことです。FBIは他人の体を所有しているという感覚が発生する現象で、元々は脳疾患の下で生じる自己像幻想（Autoscopic Phenomena）という現象に基づいて発展してきたものですが、特定の条件下においてFBIが健康な人であっても発生することが確認されました。これをIllusory Ownershipと言います。</p>
+	<p>　現在、仮想現実（Virtual Reality）の発展により、より強く現実味のある没入感が実現されつつあります。我々はその没入感を更に深めるため、Illusory Ownershipが発生するようなVR環境について研究を行っています。ゆくゆくは、人々にVRを通じて異世界に飛び込む感覚を体験させられるようになるのを目指しています！中二病でも研究がしたい！</p>
     </section>
 	
 	<section class="list" id="light_simulation">
-    <a href="#">
     <h4>光シミュレーション</h4>
     <figure><img src="images/sample1.jpg" width="200" height="133" alt=""></figure>
     <p>製品Bの説明をここに入れます。</p>
-    </a>
     </section>
 
 </section>
